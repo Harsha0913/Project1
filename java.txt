@@ -1,0 +1,588 @@
+package javaProject;
+import java.util.Scanner;
+public class Store 
+{
+	static int count,addAll,sumAdd;
+	double percentAdd;
+	
+	static int s_no[]=new int[20];
+	static int price[]=new int[20];
+	static int quantity[]=new int[20];
+	static String productArr[]=new String[20];
+	
+	static int i;
+	static int counting=-1;
+	
+	int store()
+	{
+		System.out.println("-----------------------------------------");
+		System.out.println("| 1)FRUITS |");
+		System.out.println("| 2)VEGETABLES |");
+		System.out.println("| 3)COSMETICS |");
+		System.out.println("| 4)MASALA POWDERS |");
+		System.out.println("| 5)EXIT |");
+		System.out.println("-----------------------------------------");
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Please choose your Option");
+		
+		int x=sc.nextInt();
+		
+		return x;
+	}
+	
+	int fruits()
+	{
+		while(true)
+		{
+			System.out.println("--------------------------------------");
+			System.out.println("| 1)MANGO-----------1KG---------RS.200---|");
+			System.out.println("| 2)APPLE-----------1KG---------RS.250---|");
+			System.out.println("| 3)BANANA----------1KG---------RS.50----|");
+			System.out.println("| 4)PINEAPPLE-------1KG---------RS.70----|");
+			System.out.println("| 5)PAPAYA----------1KG---------RS.60----|");
+			System.out.println("----------------------------------------");
+			
+			System.out.println("Please choose your option");
+			
+			Scanner sc=new Scanner(System.in);
+			int x=sc.nextInt();
+			
+			switch(x)
+			{
+			case 101:
+				System.out.println("How many kgs do you need?");
+				
+				int mango=sc.nextInt();
+				
+				quantity[i]=mango;
+				
+				price[i]=mango*200;
+				
+				addAll+=mango*200;
+				//addAll=addAll+mango*200;
+				
+				productArr[i]="mango";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 102:
+               System.out.println("How many kgs do you need?");
+				
+				int apple=sc.nextInt();
+				
+				quantity[i]=apple;
+				
+				price[i]=apple*250;
+				
+				addAll+=apple*250;
+				//addAll=addAll+apple*200;
+				
+				productArr[i]="apple";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 103:
+                System.out.println("How many kgs do you need?");
+				
+				int banana=sc.nextInt();
+				
+				quantity[i]=banana;
+				
+				price[i]=banana*50;
+				
+				addAll+=banana*50;
+				//addAll=addAll+banana*50;
+				
+				productArr[i]="banana";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 104:
+                System.out.println("How many kgs do you need?");
+				
+				int pineapple=sc.nextInt();
+				
+				quantity[i]=pineapple;
+				
+				price[i]=pineapple*70;
+				
+				addAll+=pineapple*70;
+				//addAll=addAll+pineapple*70;
+				
+				productArr[i]="pineapple";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 105:
+                System.out.println("How many kgs do you need?");
+				
+				int papaya=sc.nextInt();
+				
+				quantity[i]=papaya;
+				
+				price[i]=papaya*60;
+				
+				addAll+=papaya*60;
+				//addAll=addAll+papaya*60;
+				
+				productArr[i]="papaya";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			default	:
+				System.out.println("-------X------Invalid Number-----X-------");
+				
+			continue;	
+
+			}
+			while(true)
+			{
+				System.out.println("Press 1 to continue");
+				System.out.println("Press 2 to Exit");
+				
+				int z=sc.nextInt();
+				
+				switch(z)
+				{
+				case 1:
+					return z;
+					
+				case 2:
+					return z;
+					
+				default:
+				    System.out.println("--------X-----Invalid Number----X--------");
+				    
+				continue;    
+				}
+			}
+			
+		}
+	}
+	int vegetables()
+	{
+		while(true)
+		{
+			System.out.println("--------------------------------------");
+			System.out.println("| 201)TOMATO------------1KG---------RS.60---|");
+			System.out.println("| 202)SPINACH-----------1KG---------RS.20---|");
+			System.out.println("| 203)BEETROOT----------1KG---------RS.50----|");
+			System.out.println("| 204)POTATO------------1KG---------RS.35----|");
+			System.out.println("| 205)BRINJAL-----------1KG---------RS.45---|");
+			System.out.println("----------------------------------------");
+			
+			System.out.println("Please choose your option");
+			
+			Scanner sc=new Scanner(System.in);
+			int x=sc.nextInt();
+			
+			switch(x)
+			{
+			case 201:
+				System.out.println("How many kgs do you need?");
+				
+				int tomato=sc.nextInt();
+				
+				quantity[i]=tomato;
+				
+				price[i]=tomato*60;
+				
+				addAll+=tomato*60;
+				//addAll=addAll+TOMATO*60;
+				
+				productArr[i]="tomato";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 202:
+               System.out.println("How many kgs do you need?");
+				
+				int spinach=sc.nextInt();
+				
+				quantity[i]=spinach;
+				
+				price[i]=spinach*20;
+				
+				addAll+=spinach*20;
+				//addAll=addAll+spinach*20;
+				
+				productArr[i]="spinach";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 203:
+                System.out.println("How many kgs do you need?");
+				
+				int beetroot=sc.nextInt();
+				
+				quantity[i]=beetroot;
+				
+				price[i]=beetroot*50;
+				
+				addAll+=beetroot*50;
+				//addAll=addAll+beetroot*50;
+				
+				productArr[i]="beetroot";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 204:
+                System.out.println("How many kgs do you need?");
+				
+				int potato=sc.nextInt();
+				
+				quantity[i]=potato;
+				
+				price[i]=potato*35;
+				
+				addAll+=potato*35;
+				//addAll=addAll+potato*35;
+				
+				productArr[i]="potato";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 205:
+                System.out.println("How many kgs do you need?");
+				
+				int brinjal=sc.nextInt();
+				
+				quantity[i]=brinjal;
+				
+				price[i]=brinjal*45;
+				
+				addAll+=brinjal*45;
+				//addAll=addAll+brinjal*45;
+				
+				productArr[i]="brinjal";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			default	:
+				System.out.println("-------X------Invalid Number-----X-------");
+				
+			continue;	
+
+			}
+			while(true)
+			{
+				System.out.println("Press 1 to continue");
+				System.out.println("Press 2 to Exit");
+				
+				int z=sc.nextInt();
+				
+				switch(z)
+				{
+				case 1:
+					return z;
+					
+				case 2:
+					return z;
+					
+				default:
+				    System.out.println("--------X-----Invalid Number----X--------");
+				    
+				continue;    
+				}
+			}
+			
+		}
+
+	}
+	int cosmetics()
+	{
+		while(true)
+		{
+			System.out.println("--------------------------------------");
+			System.out.println("| 301)KAJAL---------------1KG---------RS.50---|");
+			System.out.println("| 302)LIP STICK-----------1KG---------RS.20---|");
+			System.out.println("| 303)NAIL POLISH---------1KG---------RS.30----|");
+			System.out.println("| 304)FACE POWDER---------1KG---------RS.70----|");
+			System.out.println("| 305)LOTION--------------1KG---------RS.120----|");
+			System.out.println("----------------------------------------");
+			
+			System.out.println("Please choose your option");
+			
+			Scanner sc=new Scanner(System.in);
+			int x=sc.nextInt();
+			
+			switch(x)
+			{
+			case 301:
+				System.out.println("How many kgs do you need?");
+				
+				int kajal=sc.nextInt();
+				
+				quantity[i]=kajal;
+				
+				price[i]=kajal*50;
+				
+				addAll+=kajal*50;
+				//addAll=addAll+kajal*50;
+				
+				productArr[i]="kajal";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 302:
+               System.out.println("How many kgs do you need?");
+				
+				int lipstick=sc.nextInt();
+				
+				quantity[i]=lipstick;
+				
+				price[i]=lipstick*20;
+				
+				addAll+=lipstick*20;
+				//addAll=addAll+lipstick*20;
+				
+				productArr[i]="lipstick";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 303:
+                System.out.println("How many kgs do you need?");
+				
+				int nailpolish=sc.nextInt();
+				
+				quantity[i]=nailpolish;
+				
+				price[i]=nailpolish*30;
+				
+				addAll+=nailpolish*30;
+				//addAll=addAll+nailpolish*30;
+				
+				productArr[i]="nailpolish";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 304:
+                System.out.println("How many kgs do you need?");
+				
+				int facepowder=sc.nextInt();
+				
+				quantity[i]=facepowder;
+				
+				price[i]=facepowder*70;
+				
+				addAll+=facepowder*70;
+				//addAll=addAll+facepowder*70;
+				
+				productArr[i]="facepowder";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			case 305:
+                System.out.println("How many kgs do you need?");
+				
+				int lotion=sc.nextInt();
+				
+				quantity[i]=lotion;
+				
+				price[i]=lotion*60;
+				
+				addAll+=lotion*60;
+				//addAll=addAll+lotion*60;
+				
+				productArr[i]="lotion";
+				
+				s_no[i]=++count;
+				
+				i++;
+				
+				break;
+				
+			default	:
+				System.out.println("-------X------Invalid Number-----X-------");
+				
+			continue;	
+
+			}
+			while(true)
+			{
+				System.out.println("Press 1 to continue");
+				System.out.println("Press 2 to Exit");
+				
+				int z=sc.nextInt();
+				
+				switch(z)
+				{
+				case 1:
+					return z;
+					
+				case 2:
+					return z;
+					
+				default:
+				    System.out.println("--------X-----Invalid Number----X--------");
+				    
+				continue;    
+				}
+			}
+			
+		}
+
+	}
+	void sumOfAll()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your name");
+		String x=sc.next();
+		
+		System.out.println("Enter your address");
+		String y=sc.next();
+		
+		System.out.println("Enter your contact");
+		long z=sc.nextLong();
+		
+		System.out.println("---------------------------------------------------------");
+		
+		System.out.println("-----------------Welcome to Sathya Store------------------");
+		
+		System.out.println("---------------------------------------------------------");
+		
+		System.out.println("S.no | Qty |Name |Price");
+		System.out.println("---------------------------------------------------------");
+		for(int k=0;k<count;k++)
+		{
+			System.out.printf("%d%-2d   %-20s  %-6d\n",s_no,quantity[k],productArr[k],price[k]);
+			
+			System.out.println("-----------------------------------------------------");
+			
+			System.out.println("Total bill of purchased items"+addAll);
+			
+			if(addAll>500)
+			{
+				percentAdd=addAll*0.05;
+				
+				addAll-=percentAdd;
+				
+				System.out.println("you received a discount of 5%"+percentAdd);
+			}
+			System.out.println("Final bill is : "+addAll);
+			
+			System.out.println("====Thankyou for Shopping you saved Rs."+percentAdd+"====");
+			
+			System.out.println("-------------------------------------------------------");
+			
+			System.out.println("Name : "+x);
+			System.out.println("Address : "+y);
+			System.out.println("Contact no : "+z);
+			
+			System.out.println("=====JAVA IS AWESOME=====");
+		}
+	}
+	
+    public static void main(String args[])
+	{
+		System.out.println("-----------------------------------------------------------");
+		
+		System.out.println("-----Welcome to Organic Store-----");
+		
+		Store objStore=new Store();
+		int x=0;
+		while(x<10)
+		{
+			x=objStore.store();
+			if(x==1)
+			{
+				int val=objStore.fruits();;
+				if(val==1)
+				{
+					continue;
+				}
+			    if(val==2)
+			    {
+				    objStore.sumOfAll();
+			    	return;
+			    }
+		    }
+			else if(x==2)
+			{
+				int reu=objStore.vegetables();
+				
+				if(reu==1)
+				{
+					continue;
+				}
+				if(reu==2)
+				{
+					objStore.sumOfAll();
+					return;
+				}
+			}
+			else if(x==3)
+			{
+				int reu=objStore.cosmetics();
+				
+				if(reu==1)
+				{
+					continue;
+				}
+				if(reu==2)
+				{
+					objStore.sumOfAll();
+					return;
+				}
+			}
+
+	    }
+   }
+}
